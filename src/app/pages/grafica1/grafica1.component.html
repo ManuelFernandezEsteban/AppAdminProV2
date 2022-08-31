@@ -1,22 +1,21 @@
-
-
 <div class="row">
     <div class="col-6">
-        <app-grafica-donut></app-grafica-donut>
+        <app-grafica-donut title="Ventas por delegación" 
+        [labels]="delegaciones" [data]="datosDelegacionesVentas"></app-grafica-donut>
     </div>
     <div class="col-6">
-        <app-grafica-donut></app-grafica-donut>
-     </div>
+        <app-grafica-donut title="Compras por delegación" [labels]="delegaciones" [data]="datosDelegacionesCompras">
+        </app-grafica-donut>
+    </div>
 </div>
 
 <div class="row">
     <div class="col-6">
-        <app-grafica-donut></app-grafica-donut>
+        <app-grafica-donut title="Ventas por trimestre global" [labels]="trimestres"
+            [data]="datosGlobalVentas"></app-grafica-donut>
     </div>
     <div class="col-6">
-        <app-grafica-donut></app-grafica-donut>
+        <app-grafica-donut title="Compras por trimestre global" [labels]="trimestres"
+            [data]="datosGlobalCompras"></app-grafica-donut>
     </div>
 </div>
-
-
-
